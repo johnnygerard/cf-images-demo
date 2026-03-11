@@ -1,4 +1,4 @@
-# Astro 6 Starter
+# Cloudflare Images Demo
 
 This starter repository facilitates the creation of new Astro projects using the configuration described below.
 
@@ -6,7 +6,7 @@ To learn how to use a GitHub template repository, check
 out [Creating a repository from a template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
 
 ![project status](https://img.shields.io/badge/project_status-active-success?style=for-the-badge)
-[![live site](https://img.shields.io/badge/live_site-blue?style=for-the-badge)](https://starter-astro-6.mail-25a.workers.dev/)
+[![live site](https://img.shields.io/badge/live_site-blue?style=for-the-badge)](https://cf-images-demo.mail-25a.workers.dev/)
 
 ## Tech Stack
 
