@@ -1,0 +1,25 @@
+---
+type StatItem = {
+  label: string;
+  value: string;
+};
+
+type Props = {
+  items: StatItem[];
+};
+
+const { items } = Astro.props;
+---
+
+<ul class="grid gap-3 text-sm text-neutral-300 sm:grid-cols-3">
+  {
+    items.map(({ label, value }) => (
+      <li class="rounded-2xl border border-neutral-800 bg-neutral-900/70 px-4 py-3">
+        <span class="block text-xs tracking-[0.2em] text-neutral-400 uppercase">
+          {label}
+        </span>
+        <span class="mt-1 block font-medium text-white">{value}</span>
+      </li>
+    ))
+  }
+</ul>

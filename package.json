@@ -41,7 +41,7 @@
     "node": "24",
     "npm": "11"
   },
-  "name": "starter-astro-6",
+  "name": "cf-images-demo",
   "private": true,
   "scripts": {
     "astro": "astro",

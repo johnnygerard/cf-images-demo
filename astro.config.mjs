@@ -22,7 +22,7 @@ export default defineConfig({
     },
   ],
   integrations: [sitemap()],
-  site: "https://starter-astro-6.mail-25a.workers.dev",
+  site: "https://cf-images-demo.mail-25a.workers.dev",
   trailingSlash: "never",
   vite: {
     plugins: [tailwindcss()],
