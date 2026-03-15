@@ -1,12 +1,13 @@
 ---
 import ImageDeliveryShowcase from "~/components/ImageDeliveryShowcase.astro";
 
-const ORIGIN = "https://cf-images-demo-r2.jgerard.dev";
-const SOURCE_IMAGE = ORIGIN + "/sunlight-dark-castle.png";
+const ZONE = "cf-images-demo.jgerard.dev";
+const SOURCE_IMAGE =
+  "https://cf-images-demo-r2.jgerard.dev/sunlight-dark-castle.png";
 
 // Cloudflare Images URL transformations docs: https://developers.cloudflare.com/images/transform-images/transform-via-url/
 const buildImageUrl = (width: number) =>
-  `${ORIGIN}/cdn-cgi/image/f=auto,fit=cover,w=${width}/${SOURCE_IMAGE}`;
+  `https://${ZONE}/cdn-cgi/image/f=auto,fit=cover,w=${width}/${SOURCE_IMAGE}`;
 
 const widths = [480, 768, 1024, 1440, 2048];
 const src = buildImageUrl(2048);
