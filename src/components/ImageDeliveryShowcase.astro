@@ -1,0 +1,51 @@
+---
+import ImageDeliveryStats from "~/components/ImageDeliveryStats.astro";
+import Layout from "~/layouts/Layout.astro";
+---
+
+<Layout
+  title="Cloudflare Images Demo"
+  description="Explore responsive Cloudflare Images delivery with automatic format negotiation, edge optimization, and adaptive image sizing."
+>
+  <section
+    class="mx-auto w-full max-w-6xl px-6 py-12 sm:px-8 sm:py-16 lg:px-10"
+  >
+    <div
+      class="grid items-center gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:gap-16"
+    >
+      <div class="space-y-6">
+        <p
+          class="text-xs font-medium tracking-[0.3em] text-neutral-400 uppercase"
+        >
+          Cloudflare Images
+        </p>
+        <div class="space-y-4">
+          <h1
+            class="text-4xl font-semibold text-balance text-white sm:text-5xl"
+          >
+            Responsive image delivery from Cloudflare’s edge.
+          </h1>
+          <p class="max-w-2xl text-base leading-7 text-neutral-300 sm:text-lg">
+            This hero image is delivered through Cloudflare Images using
+            responsive widths, automatic format negotiation, and edge
+            optimization for faster loads.
+          </p>
+        </div>
+
+        <ImageDeliveryStats
+          items={[
+            { label: "Format", value: "Auto" },
+            { label: "Quality", value: "85 (default)" },
+            { label: "Srcset", value: "5 breakpoints" },
+          ]}
+        />
+      </div>
+
+      <figure
+        class="overflow-hidden rounded-3xl border border-neutral-800 bg-neutral-900/70 shadow-2xl shadow-black/30"
+      >
+        <slot />
+      </figure>
+    </div>
+  </section>
+</Layout>
