@@ -30,17 +30,18 @@ export const prerender = false;
           >
             Responsive image delivery from Cloudflare’s edge.
           </h1>
-          <p class="max-w-2xl text-base leading-7 text-neutral-300 sm:text-lg">
+          <p
+            class="max-w-2xl text-base leading-7 text-pretty text-neutral-300 sm:text-lg"
+          >
             This hero image is delivered through Cloudflare Images using
-            responsive widths, automatic format negotiation, and edge
-            optimization for faster loads.
+            responsive widths and edge optimization for faster loads.
           </p>
         </div>
 
         <ImageDeliveryStats
           items={[
-            { label: "Format", value: "Auto" },
-            { label: "Quality", value: "85 (default)" },
+            { label: "Format", value: "AVIF" },
+            { label: "Resolution", value: "2048x2048" },
             { label: "Srcset", value: "5 breakpoints" },
           ]}
         />
