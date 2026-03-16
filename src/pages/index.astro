@@ -1,6 +1,5 @@
 ---
 import { Image } from "astro:assets";
-import castleImage from "~/assets/images/sunlight-dark-castle.png";
 import ImageDeliveryStats from "~/components/ImageDeliveryStats.astro";
 import Layout from "~/layouts/Layout.astro";
 import { tw } from "~/utils/tw";
@@ -33,30 +32,33 @@ export const prerender = false;
           <p
             class="max-w-2xl text-base leading-7 text-pretty text-neutral-300 sm:text-lg"
           >
-            This hero image is delivered through Cloudflare Images using
-            responsive widths and edge optimization for faster loads.
+            The current page uses on-demand rendering and the Astro Image
+            component to serve optimized image variants from a source image
+            stored in Cloudflare R2.
           </p>
         </div>
 
         <ImageDeliveryStats
           items={[
-            { label: "Format", value: "AVIF" },
-            { label: "Resolution", value: "2048x2048" },
-            { label: "Srcset", value: "5 breakpoints" },
+            { label: "Output format", value: "AVIF" },
+            { label: "Original resolution", value: "2048x2048" },
+            { label: "Srcset attribute", value: "5 breakpoints" },
           ]}
         />
       </div>
 
       <Image
-        src={castleImage}
         alt="A dark stone castle lit by low sunlight through misty hills."
         class={tw(
           "aspect-square w-full rounded-3xl border border-neutral-800",
           "bg-neutral-900/70 shadow-2xl shadow-black/30",
         )}
         format="avif"
+        width={2048}
+        height={2048}
         priority
         sizes="(min-width: 64rem) 36rem, 100vw"
+        src="https://cf-images-demo-r2.jgerard.dev/sunlight-dark-castle.png"
         widths={[480, 768, 1024, 1440, 2048]}
       />
     </div>
