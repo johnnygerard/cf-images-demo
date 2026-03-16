@@ -14,12 +14,6 @@
     "enabled": true
   },
   "preview_urls": true,
-  "routes": [
-    {
-      "custom_domain": true,
-      "pattern": "cf-images-demo.jgerard.dev"
-    }
-  ],
   "send_metrics": false,
   "workers_dev": true
 }
