@@ -21,6 +21,16 @@ export default defineConfig({
       weights: ["100 900"],
     },
   ],
+  image: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        // R2 bucket domain name
+        hostname: "cf-images-demo-r2.jgerard.dev",
+        pathname: "/**",
+      },
+    ],
+  },
   integrations: [sitemap()],
   site: "https://cf-images-demo.mail-25a.workers.dev",
   trailingSlash: "never",
