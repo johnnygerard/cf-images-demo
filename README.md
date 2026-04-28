@@ -3,7 +3,7 @@
 The goal of this project is to demonstrate how to use Cloudflare Images with Astro 6 and Cloudflare Workers.
 
 ![project status](https://img.shields.io/badge/project_status-active-success?style=for-the-badge)
-[![live site](https://img.shields.io/badge/live_site-blue?style=for-the-badge)](https://cf-images-demo.mail-25a.workers.dev/)
+[![live site](https://img.shields.io/badge/live_site-blue?style=for-the-badge)](https://cf-images-demo.jgerard.workers.dev/)
 [![Lighthouse report](https://img.shields.io/badge/lighthouse_report-F44B21?style=for-the-badge&logo=lighthouse&logoColor=fff)](https://googlechrome.github.io/lighthouse/viewer/?gist=5a62cb5ccb912c9575c3fa4fbee57793)
 
 ## Tech Stack
